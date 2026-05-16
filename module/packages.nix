@@ -25,8 +25,11 @@
     # image manipulation
     pkgs.imagemagick
 
-    # metadata anonymization
-    pkgs.mat2
+    # audio/video stuff
+    pkgs.ffmpeg
+
+    # hello
+    pkgs.hello
 
     # text editors
     pkgs.nano
@@ -95,6 +98,9 @@
 
     # control the TCP/IP stack
     pkgs.iproute2
+
+    # small utilities for networking
+    pkgs.iputils
 
     # dig
     pkgs.dig
@@ -170,9 +176,6 @@
     pkgs.jq
     pkgs.yq
 
-    # luks
-    pkgs.cryptsetup
-
     # hostname
     pkgs.hostname
 
@@ -184,6 +187,27 @@
 
     # openbsd signing tool
     pkgs.signify
+
+    # gnupg
+    pkgs.gnupg
+
+    # sops
+    pkgs.sops
+
+    # secureboot
+    pkgs.sbctl
+
+    # zfs
+    pkgs.zfs
+
+    # luks
+    pkgs.cryptsetup
+
+    # fat
+    pkgs.dosfstools
+
+    # tmux
+    pkgs.tmux
 
   ];
 }
